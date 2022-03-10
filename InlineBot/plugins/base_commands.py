@@ -9,7 +9,7 @@ from InlineBot.database import present_in_userbase, add_to_userbase
 
 start_keyboard = [
     [
-        InlineKeyboardButton(text = '🤔 Help', callback_data = "help"),
+        InlineKeyboardButton(text = 'Owner', user_id = 5067973166),
         InlineKeyboardButton(text = '🤖 About', callback_data = "about")
     ],
     [
