@@ -10,9 +10,10 @@ from InlineBot.database import present_in_userbase, add_to_userbase
 start_keyboard = [
     [
         InlineKeyboardButton(text = '🤔 Help', callback_data = "help"),
-        InlineKeyboardButton(text = '🤖 About', callback_data = "about")
+        InlineKeyboardButton(text = 'About 🤖', callback_data = "about")
     ],
     [
+        InlineKeyboardButton(text = '🔍 Search', switch_inline_query_current_chat = ''),
         InlineKeyboardButton(text = 'Close 🔒', callback_data = "close")
     ]
 ]
@@ -23,7 +24,7 @@ start_keyboard_c = [
         InlineKeyboardButton(text = 'Close 🔒', callback_data = "close")
     ],
     [
-        InlineKeyboardButton(text = 'Search Here', switch_inline_query_current_chat = '')
+        InlineKeyboardButton(text = 'Try Inline', switch_inline_query_current_chat = '')
     ]
 ]
 
@@ -40,11 +41,18 @@ help_keyboard = [
 about_keyboard = [
      [
         InlineKeyboardButton(text = '🤔 Help', callback_data = 'help'),
+        InlineKeyboardButton(text = '🔍 Inline', switch_inline_query_current_chat = '')
+     ],
+     [
         InlineKeyboardButton(text = 'Close 🔒', callback_data = 'close')
-    ]
+     ]
 ]
 
 about_keyboard_c = [
+    [
+        InlineKeyboardButton(text = '👤 Owner', user_id = 1926090919),
+        InlineKeyboardButton(text = '🤖 Bot', user_id = 1977868351)
+    ],
     [
         InlineKeyboardButton(text = 'Close 🔒', callback_data = 'close')
     ]
